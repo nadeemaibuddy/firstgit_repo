@@ -1,0 +1,72 @@
+git clone project link  - used to copy project(folder) from github
+
+cd folder name - used to change directory
+
+ls - used to know how many files are there(list the files)
+
+la -a - used to see hidden files 
+
+clear - used to clear terminal
+
+git status - used to know stats of program(project)
+
+status :- 
+untracked - git dont know about the file and it is not tracking it (because we did not save it in git)
+
+modified(change somithing in file) - we have modified (change /updated file) and did not comit(save) it and did not told git
+
+unmodified(unchanged)
+
+staged -   it is the state wher the file is add and ready to commit(save)
+
+
+commit - the git has saved (tracked) the file
+
+git add file_name - it add file in the directory(working dir) in git staged area
+
+git add . - to add all files
+
+git commit -m "some message" -  to commit the changes
+
+
+git push origin main - push our project(repo) from our local system to github(website)(in the folder which we have copied)
+
+
+
+git init - it is used to make the folder a git folder (mean sthe file which we create in our local system is not a          git repo to make it as git repo we use this)
+
+
+before pushing 
+
+git remote add origin <-repolink>-
+insted of origin we can use any name but we have to use tha name in git push origin main
+
+git remote -v  - used to veryfi remote(repo)
+
+git branch - to check branch
+
+git  branch -M main  - to chhange branch name
+
+git push -u origin main - here -u is used for short form so that if we are workin on same project then we have to write (git push ) insted of (git push origin main)
+
+
+
+git to local 
+
+git copy   repo link
+
+cd to your folder
+cd folder name
+
+add
+commit
+push
+
+
+from local to git
+git init
+git add
+git commit
+git remote (only one time) for new local repo 
+cange name to main
+git push 
