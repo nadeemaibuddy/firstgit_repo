@@ -70,3 +70,21 @@ git commit
 git remote (only one time) for new local repo 
 cange name to main
 git push 
+
+
+git checkout branch name  ---- to move to other branch
+
+git checkout -b branch name ----- to create branch
+
+git branch -d branch name ---- to delete branch
+
+
+
+
+
+
+
+
+
+
+
