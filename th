@@ -67,7 +67,7 @@ from local to git
 git init
 git add
 git commit
-git remote (only one time) for new local repo 
+git remote add origin (only one time) for new local repo 
 cange name to main
 git push 
 
