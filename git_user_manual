@@ -1,5 +1,7 @@
 git clone project link  - used to copy project(folder) from github
 
+git config --list
+
 cd folder name - used to change directory
 
 ls - used to know how many files are there(list the files)
@@ -72,13 +74,11 @@ cange name to main
 git push 
 
 
-git checkout branch name  ---- to move to other branch
+git checkout branchname  ---- to move to other branch
 
-git checkout -b branch name ----- to create branch
+git checkout -b branchname ----- to create branch
 
-git branch -d branch name ---- to delete branch
-
-
+git branch -d branchname ---- to delete branch
 
 
 
@@ -86,5 +86,9 @@ git branch -d branch name ---- to delete branch
 
 
 
+gcc palindrome.c -o palindrome
+./palindrome
 
 
+g++ palindrome.cpp -o palindrome
+./palindrome
