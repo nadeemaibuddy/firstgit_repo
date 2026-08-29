@@ -86,9 +86,5 @@ git branch -d branchname ---- to delete branch
 
 
 
-gcc palindrome.c -o palindrome
-./palindrome
-
-
-g++ palindrome.cpp -o palindrome
-./palindrome
+some use fule repos
+https://github.com/public-apis/public-apis
