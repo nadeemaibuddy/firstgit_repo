@@ -1,14 +1,28 @@
-git clone project link  - used to copy project(folder) from github
-
-git config --list
-
+# terminal
 cd folder name - used to change directory
 
 ls - used to know how many files are there(list the files)
 
-la -a - used to see hidden files 
+ls -a - used to see hidden files 
 
 clear - used to clear terminal
+
+
+---------------------------------------------------------------
+
+
+GITHUB:
+
+
+git clone project link  - used to copy project(folder) from github
+
+git config --list
+
+
+---------------------------------------------------------------
+
+
+STATUS:
 
 git status - used to know stats of program(project)
 
@@ -24,6 +38,12 @@ staged -   it is the state wher the file is add and ready to commit(save)
 
 commit - the git has saved (tracked) the file
 
+
+---------------------------------------------------------------
+
+
+ADD AND COMMIT:
+
 git add file_name - it add file in the directory(working dir) in git staged area
 
 git add . - to add all files
@@ -38,52 +58,106 @@ git push origin main - push our project(repo) from our local system to github(we
 git init - it is used to make the folder a git folder (mean sthe file which we create in our local system is not a          git repo to make it as git repo we use this)
 
 
-before pushing 
-
 git remote add origin <-repolink>-
 insted of origin we can use any name but we have to use tha name in git push origin main
 
 git remote -v  - used to veryfi remote(repo)
 
-git branch - to check branch
-
-git  branch -M main  - to chhange branch name
 
 git push -u origin main - here -u is used for short form so that if we are workin on same project then we have to write (git push ) insted of (git push origin main)
 
 
+---------------------------------------------------------------
 
-git to local 
+
+GITHUB TO SYSTEM:
 
 git copy   repo link
 
 cd to your folder
 cd folder name
 
-add
-commit
-push
+git add .
+git commit -m "message"
+git push push origin main
 
 
-from local to git
-git init
-git add
-git commit
-git remote add origin (only one time) for new local repo 
-cange name to main
-git push 
+---------------------------------------------------------------
 
 
-git checkout branchname  ---- to move to other branch
+SYSTEM TO GIHUB:
+
+
+git init - it is used to make the folder a git folder (mean sthe file which we create in our local system is not a          git repo to make it as git repo we use this)
+
+git add .
+
+git commit -m "message"
+
+git remote add origin <-repolink>-      insted of origin we can use any name but we have to use tha name in git push origin main
+
+git push  origin main
+
+
+git remote -v  - used to veryfi remote(repo)
+
+
+---------------------------------------------------------------
+
+
+BRANCH:
+
+branch is a copy of our main code .so that the developers working on the code make the branch(copy) of the code and work on it insted of disturbing the main code
+
+git branch - to check branch
+
+git  branch -M main  - to chhange branch name
 
 git checkout -b branchname ----- to create branch
 
-git branch -d branchname ---- to delete branch
+git checkout branchname  ---- to move to other branch 
+
+git branch -d branchname ---- to delete branch    cant delete the branch on which you are at
 
 
+---------------------------------------------------------------
+
+MERGE:
+
+git diff branch name  ---  to compare commit,files,difference
+
+way 1:
+git merge branchname
+
+way 2:
+create PR(pull request)
+
+after mergin two branches:
+
+run a pull request on main
+
+git pull origin main- used to downlode or update the local repo(means it will update the local repo with the new content on github)
 
 
+---------------------------------------------------------------
 
+
+UNDO CHANGES:
+
+to reset change after git add .(staged changes)
+
+git reset filename   -for single file
+git reset            -for multiple file
+
+to reset change after git commit -m ""
+
+git reset HEAD~1   -to reset (undo) one commit 
+                     HEAD~1 means reset the repo to the last commit 
+
+git reset commit hash    - has is a unique value for every commit
+git reset --hard commit hash  -this reset the commits in vs code also
+
+git log   - to see the commits
 
 
 some use fule repos
